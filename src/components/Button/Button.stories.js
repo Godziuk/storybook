@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import Center from '../Center/Center'
 
 //w stories lewy panel
 export default{
@@ -7,7 +8,8 @@ export default{
     component: Button,
     args: {
         children: 'Button' //działa wszystkich children i nadaje text na button ten sam czyli 'Button'
-    }
+    },
+    //decorators: [story => <Center>{story()}</Center>], //dekorator dla Buttona
 
 }
 //eksport różnych story dla buttona

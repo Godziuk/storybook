@@ -1,5 +1,11 @@
+import React from 'react';
+import { addDecorator } from '@storybook/react';
+import Center from '../src/components/Center/Center';
+
+addDecorator(story => <Center>{story()}</Center>) //dodanie globalnie dekoratora dla wszystkich komponentów
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   options: { storySort: (a, b) => a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),}, // sortowanie komponentów zeby nie były tak jak były importowane
 }
+
