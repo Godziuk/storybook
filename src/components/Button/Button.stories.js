@@ -3,7 +3,7 @@ import Button from './Button';
 
 //w stories lewy panel
 export default{
-    title: 'Button',
+    title: 'Form/Control/Button',
     component: Button
 }
 //eksport różnych story dla buttona
