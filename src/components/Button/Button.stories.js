@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import Center from '../Center/Center'
+//import Center from '../Center/Center'
 
 //w stories lewy panel
 export default{
